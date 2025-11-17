@@ -1,0 +1,108 @@
+[
+    {
+      "id": "ABC123",
+      "customer": "Acme Imports",
+      "origin": "Shanghai",
+      "destination": "Los Angeles",
+      "milestones": [
+        {
+          "status": "Booked",
+          "timestamp": "2025-01-12T08:00:00Z"
+        },
+        {
+          "status": "Departed",
+          "timestamp": "2025-01-15T14:00:00Z"
+        },
+        {
+          "status": "Arrived",
+          "timestamp": "2025-01-28T20:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": "XYZ789",
+      "customer": "OceanCo",
+      "origin": "Rotterdam",
+      "destination": null,
+      "milestones": [
+        {
+          "status": "Booked",
+          "timestamp": "2025-02-01T10:00:00Z"
+        },
+        {
+          "status": "Arrived",
+          "timestamp": null
+        }
+      ]
+    },
+    {
+      "id": "MNO456",
+      "customer": "SupplyMax",
+      "origin": "Singapore",
+      "destination": "Long Beach",
+      "milestones": [
+        {
+          "status": "Departed",
+          "timestamp": "2025-03-03T05:00:00Z"
+        },
+        {
+          "status": "Booked",
+          "timestamp": "2025-03-01T05:00:00Z"
+        },
+        {
+          "status": "Customs Hold",
+          "timestamp": "not-a-date"
+        }
+      ]
+    },
+    {
+      "id": "QWE234",
+      "customer": "BlueWave Logistics",
+      "origin": "Hamburg",
+      "destination": "New York",
+      "milestones": [
+        { "status": "Booked", "timestamp": "2025-02-10T09:00Z" },
+        { "status": "Departed", "timestamp": "2025-02-12T15:00Z" },
+        { "status": "Arrived", "timestamp": "2025-02-24T17:00Z" }
+      ]
+    },
+    {
+      "id": "RTY567",
+      "customer": "Zenith Trade Group",
+      "origin": "Busan",
+      "destination": "Seattle",
+      "milestones": [
+        { "status": "Booked", "timestamp": "2025-04-01T08:00Z" },
+        { "status": "Departed", "timestamp": null }
+      ]
+    },
+    {
+      "id": "UIO890",
+      "customer": "Harbor Freight Intl",
+      "origin": "Ho Chi Minh City",
+      "destination": "Houston",
+      "milestones": []
+    },
+    {
+      "id": "JKL321",
+      "customer": "Global Marine Corp",
+      "origin": "Antwerp",
+      "destination": "Baltimore",
+      "milestones": [
+        { "status": "Booked", "timestamp": "2025-05-01T08:00Z" },
+        { "status": "Arrived", "timestamp": "2025-05-10T12:00Z" }
+      ]
+    },
+    {
+      "id": "VBN654",
+      "customer": "EverPeak Trading",
+      "origin": "Valencia",
+      "destination": "Boston",
+      "milestones": [
+        { "status": "Booked", "timestamp": "2025-03-11T06:00Z" },
+        { "status": "Departed", "timestamp": "2025-03-13T10:00Z" },
+        { "status": "Arrived", "timestamp": "2025-03-25T16:00Z" },
+        { "status": "Delivered", "timestamp": "2025-03-27T18:00Z" }
+      ]
+    }
+  ]

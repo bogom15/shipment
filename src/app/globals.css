@@ -1,26 +1,197 @@
-@import "tailwindcss";
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background-color: #f9fafb;
+  color: #222;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+h1 {
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+}
+
+section {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+}
+
+/* Buttons and inputs */
+button,
+input[type="text"],
+input[type="search"],
+input[type="checkbox"] {
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+input[type="text"],
+input[type="search"] {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 8px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+button {
+  cursor: pointer;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background: #f3f4f6;
+  padding: 6px 12px;
+}
+
+button:hover {
+  background: #e5e7eb;
+}
+
+.placeholder-box {
+  background: #fafafa;
+  border: 1px dashed #bbb;
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 0.95rem;
+}
+
+.warning {
+  color: darkorange;
+  font-size: 0.9rem;
+}
+
+.error {
+  color: crimson;
+}
+
+.skeleton {
+  height: 1.25rem;
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 37%, #f0f0f0 63%);
+  background-size: 400% 100%;
+  border-radius: 4px;
+  animation: shimmer 1.4s ease infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -400px 0;
+  }
+  100% {
+    background-position: 400px 0;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* Controls section */
+.controls {
+  display: flex;
+  gap: 16px;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+
+.control-group {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  flex: 1;
+  min-width: 200px;
+}
+
+.control-group label {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #555;
+}
+
+/* Shipment list */
+.shipment-list {
+  display: grid;
+  gap: 12px;
+}
+
+.shipment-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 12px;
+  background: #fff;
+  transition: box-shadow 0.2s ease;
+}
+
+.shipment-card:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.shipment-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  cursor: pointer;
+  outline: none;
+  border-radius: 4px;
+  padding: 4px;
+  margin: -4px;
+  transition: background-color 0.2s ease;
+}
+
+.shipment-header:hover {
+  background-color: #f9fafb;
+}
+
+.shipment-header:focus-visible {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+}
+
+.shipment-meta {
+  text-align: right;
+}
+
+.shipment-timestamp {
+  font-size: 12px;
+  color: #555;
+}
+
+.shipment-warning {
+  margin-top: 8px;
+}
+
+/* Milestone list */
+.milestone-list {
+  margin-top: 12px;
+  padding: 12px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  border: 1px solid #eee;
+}
+
+.milestone-empty {
+  margin-top: 8px;
+}
+
+.milestone-items {
+  margin-top: 8px;
+  padding-left: 16px;
+  list-style-type: disc;
+}
+
+.milestone-item {
+  margin-bottom: 6px;
+}
+
+.milestone-timestamp {
+  font-size: 13px;
+  color: #666;
+}
+
+.milestone-invalid {
+  font-size: 12px;
+  margin-top: 2px;
+  color: #b36b00;
 }
